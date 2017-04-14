@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.Demo" table="SYS_USER">
+        <id name="id" type="long">
+            <column name="ID" length="32" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string" column="NAME"/>
+        <property name="password" type="string" column="PWD_MD"/>
+        <property name="email" type="string" column="EMAIL"/>
+        <property name="telNo" type="string" column="TEL_NO"/>
+        <property name="recTime" type="timestamp" column="REC_TIME"/>
+        <property name="updateTime" type="timestamp" column="UPDATE_TIME"/>
+        <property name="status" type="string" column="STATUS"/>
+
+    </class>
+</hibernate-mapping>

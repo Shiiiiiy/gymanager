@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.InnovatePlatForm" table="INNOVATE_PLATFORM">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="platName" type="string" column="PLAT_NAME"/>
+        <property name="platType" type="string" column="PLAT_TYPE"/>
+        <property name="investor" type="string" column="INVESTOR"/>
+        <property name="platLevel" type="string" column="PLAT_LEVEL"/>
+        <property name="platTime" type="timestamp" column="PLAT_TIME"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.ExcellentPerson" table="EXCELLENT_PERSON">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="psName" type="string" column="PS_NAME"/>
+        <property name="psAge" type="int" column="PS_AGE"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="psSex" type="string" column="PS_SEX"/>
+        <property name="psBrith" type="timestamp" column="PS_BIRTH"/>
+        <property name="psImage" type="string" column="PS_IMAGE"/>
+        <property name="psIntroduce" type="string" column="PS_INTRODUCE"/>
+        <property name="isInnovate" type="string" column="IS_INNOVATE"/>
+        <property name="isLeader" type="string" column="IS_LEADER"/>
+        <property name="psBelong" type="string" column="PS_BELONG"/>
+        <property name="psJob" type="string" column="PS_JOB"/>
+        <property name="psTel" type="string" column="PS_TEL"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

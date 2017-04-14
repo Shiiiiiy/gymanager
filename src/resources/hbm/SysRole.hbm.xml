@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.SysRole" table="SYS_ROLE">
+        <id name="id" type="long">
+            <column name="ID" length="20" />
+            <generator class="identity" />
+        </id>
+        <property name="roleCode" type="string" column="ROLE_CODE"/>
+        <property name="roleName" type="string" column="ROLE_NAME"/>
+        <property name="remarker" type="string" column="REMARK"/>
+        <property name="recTime" type="timestamp" column="REC_TIME"/>
+        <property name="updateTime" type="timestamp" column="UPDATE_TIME"/>
+        <property  name="status"  type="java.lang.Long" column="STATUS"/>
+    </class>
+</hibernate-mapping>

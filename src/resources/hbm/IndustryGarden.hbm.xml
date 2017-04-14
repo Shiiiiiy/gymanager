@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.IndustryGarden" table="INDUSTRY_GARDEN">
+        <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="introduce" type="java.lang.String" column="INTRODUCE"/>
+        <property name="industryType" type="java.lang.String" column="INDUSTRY_TYPE"/>
+        <property name="name" type="java.lang.String" column="NAME"/>
+        
+        <property name="comments" type="java.lang.String" column="COMMENTS"/>
+        
+        <property name="logoImage" type="java.lang.String" column="LOGO_IMAGE"/>
+        <property name="igType" type="java.lang.String" column="IG_TYPE"/>
+        <property name="translation" type="java.lang.String" column="TRANSLATION"/>
+        
+        <property name="introducePic" type="java.lang.String" column="STATUS"/>
+        <property name="status" type="java.lang.Long" column="USE_STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+
+    </class>
+</hibernate-mapping>

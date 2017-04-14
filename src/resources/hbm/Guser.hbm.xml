@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.Guser" table="G_USER">
+        <id name="id" type="string">
+            <column name="ID" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string" column="USERNAME"/>
+        <property name="password" type="string" column="PASSWORD"/>
+        <property name="usertype" type="string" column="USERTYPE"/>
+        <property name="status" type="long" column="STATUS"/>
+        <property name="image" type="string" column="IMAGE"/>
+        <property name="comments" type="string" column="COMMENT"/>
+        <property name="createTime" type="timestamp" column="CREATETIME"/>
+        <property name="updateTime" type="timestamp" column="UPDATETIME"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	 <class name="com.uws.model.IndustryGuild" table="INDUSTRY_GUILD">
+	 
+	 	 <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="name" type="java.lang.String" column="NAME"/>
+        <property name="belong" type="java.lang.String" column="BELONG"/>
+        <property name="peopleNO" type="java.lang.String" column="PEOPLENO"/>
+        <property name="level" type="java.lang.String" column="LEVEL"/>
+        <property name="linkman" type="java.lang.String" column="LINKMAN"/>
+        <property name="tel" type="java.lang.String" column="TEL"/>
+        <property name="startTime" type="java.util.Date" column="START_TIME"/>
+        <property name="status" type="java.lang.String" column="STATUS"/>
+        <property name="comments" type="java.lang.String" column="COMMENTS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME" />
+        
+      </class>
+</hibernate-mapping>

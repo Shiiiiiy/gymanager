@@ -1,0 +1,15 @@
+﻿/*default*/
+.header {background:#f1f1f1;}
+.left {background:#39434e;}
+.logo {background:#ff503f;}
+.nav {background: #39434e;}
+.left .user {border-bottom:#343d46 solid 1px;}
+.nav a.class_a, .xs-nav a.class_a {background: #39434e;color: #a2a2a2;}
+.nav a.active, .xs-nav a.active {background: #29333e;border-left:#ff503f solid 4px;color: #fff}
+.nav li a, .xs-nav li a {background: #39434e;color: #a2a2a2;border-bottom: #343d46 solid 1px;}
+.nav li a b, .xs-nav li a b {border-right: 5px solid #39434e;}
+.nav li a:hover, .xs-nav li a:hover {background: #424d5a;color: #fff;}
+.nav li a.current, .xs-nav li a.current {background: #424d5a;color: #fff;}
+.nav .notice, .xs-nav .notice {background: #ff503f;}
+/*table*/
+.table > thead > tr > th {background:#39434e;color:#fff;}

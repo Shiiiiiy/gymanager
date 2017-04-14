@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.FinanceEnvironment" table="FINANCE_ENVIRONMENT">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="financeName" type="string" column="FINANCE_NAME"/>
+        <property name="isBranch" type="string" column="IS_BRANCH"/>
+        <property name="tel" type="string" column="TEL"/>
+        <property name="scale" type="string" column="SCALE"/>
+        <property name="linkman" type="string" column="LINKMAN"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

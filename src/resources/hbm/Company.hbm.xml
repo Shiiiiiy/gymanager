@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	 <class name="com.uws.model.Company" table="COMPANY_INFO">
+	 	 <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="cp_name" type="java.lang.String" column="CP_NAME"/>
+        <property name="cp_belongstr" type="java.lang.String" column="CP_BELONG"/>
+        <property name="cp_type" type="java.lang.String" column="CP_TYPE"/>
+        <property name="cp_product" type="java.lang.String" column="CP_PRODUCT"/>
+        <property name="cp_location" type="java.lang.String" column="CP_LOCATION"/>
+        <property name="cp_address" type="java.lang.String" column="CP_ADDRESS"/>
+        <property name="cp_phone" type="java.lang.String" column="CP_PHONE"/>
+        <property name="cp_view" type="java.lang.String" column="CP_VIEW"/>
+        <property name="cp_logo" type="java.lang.String" column="CP_LOGO"/>
+        <property name="cp_abstract" type="java.lang.String" column="CP_ABSTRACT"/>
+        <property name="comments" type="java.lang.String" column="COMMENTS"/>
+        <property name="create_time" type="timestamp" column="CREATE_TIME"/>
+        <property name="update_time" type="timestamp" column="UPDATE_TIME"/>
+        <property name="cp_man" type="java.lang.String" column="CP_MAN"/>
+        <property name="cp_marketstr" type="java.lang.String" column="CP_MARKET"/>
+        <property name="cp_modelstr" type="java.lang.String" column="CP_MODEL"/>
+        <property name="cp_customertypestr" type="java.lang.String" column="CP_CUSTOMERTYPE"/>
+        <property name="cp_belongpartstr" type="java.lang.String" column="CP_BELONGPART"/>
+        <property name="cp_linkman" type="java.lang.String" column="CP_LINKMAN"/>
+        <property name="cp_scale" type="java.lang.String" column="CP_SCALE"/>
+        <property name="cp_time" type="timestamp" column="CP_TIME"/>
+        <property name="cp_linktel" type="java.lang.String" column="CP_LINKTEL"/>
+        <property name="cp_linkemail" type="java.lang.String" column="CP_LINKEMAIL"/>
+        <property name="cp_orgcode" type="java.lang.String" column="CP_ORGCODE"/>
+        <property name="cp_socialcode" type="java.lang.String" column="CP_SOCIALCODE"/>
+        <property name="cp_provincestr" type="java.lang.String" column="CP_PROVINCE"/>
+        <property name="cp_citystr" type="java.lang.String" column="CP_CITY"/>
+        <property name="cp_areastr" type="java.lang.String" column="CP_AREA"/>
+        <property name="useridstr" type="java.lang.String" column="USERID"/>
+        <property name="status" type="java.lang.String" column="STATUS"/>
+        <property name="is_show" type="java.lang.String" column="IS_SHOW"/>
+        
+	 </class>
+
+</hibernate-mapping>

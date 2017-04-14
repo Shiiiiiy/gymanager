@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.CompanyProp" table="COMPANIES_PROP">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="compId" type="string" column="COMP_ID"/>
+        <property name="propValue" type="string" column="PROP_VALUE"/>
+        <property name="propType" type="string" column="PROP_TYPE"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

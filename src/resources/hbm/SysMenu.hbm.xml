@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.SysMenu" table="SYS_MENU">
+        <id name="id" type="long">
+            <column name="ID" length="20" />
+            <generator class="identity" />
+        </id>
+
+
+        <property name="p_id" type="long" column="P_ID"/>
+        <property name="menu_code" type="java.lang.String" column="MENU_CODE"/>
+        <property name="title" type="java.lang.String" column="TITLE"/>
+        <property name="url" type="java.lang.String" column="URL"/>
+        <property name="remark" type="java.lang.String" column="REMARK"/>
+        <property name="status" type="long" column="STATUS"/>
+        
+        <property name="recTime" type="timestamp" column="REC_TIME"/>
+        <property name="updateTime" type="timestamp" column="UPDATE_TIME"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.NewCompanies" table="NEW_COMPANIES">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="compName" type="string" column="COMP_NAME"/>
+        <property name="ofIndustry" type="string" column="OF_INDUSTRY"/>
+        <property name="technology" type="string" column="TECHNOLOGY"/>
+        <property name="scale" type="string" column="SCALE"/>
+        <property name="linkman" type="string" column="LINKMAN"/>
+        <property name="tel" type="string" column="TEL"/>
+        <property name="webSite" type="string" column="WEBSITE"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

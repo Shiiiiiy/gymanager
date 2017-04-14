@@ -1,0 +1,20 @@
+﻿/*blue*/
+.header {background:#1c4d82;}
+.left {background:#2c70bb;}
+.logo {background:#009c1a;}
+.function li a {color:#ccc; border-left:#153f6d solid 1px;}
+.function li a.active {background-color:#153f6d; color:#fff;}
+.function li a:hover {background-color:#153f6d; color:#fff;}
+.skin-con li a:hover {background-color:transparent;}
+.arrow-down {border-top: 5px solid #ccc; }
+.nav {background: #2c70bb;}
+.left .user {border-bottom:#2765aa solid 1px;}
+.nav a.class_a, .xs-nav a.class_a {background: #2c70bb;color: #ccc;}
+.nav a.active, .xs-nav a.active {background: #1c4d82;border-left:#009c1a solid 4px;color: #fff}
+.nav li a, .xs-nav li a {background: #2c70bb;color: #ccc;border-bottom: #2765aa solid 1px;}
+.nav li a b, .xs-nav li a b {border-right: 5px solid #3279c7;}
+.nav li a:hover, .xs-nav li a:hover  {background: #3279c7;color: #fff;}
+.nav li a.current, .xs-nav li a.current {background: #3279c7;color: #fff;}
+.nav .notice, .xs-nav .notice {background: #009c1a;}
+/*table*/
+.table > thead > tr > th {background:#1c4d82;color:#fff;background-image: -moz-linear-gradient(top, #249fd8, #0a4484); /* Firefox */background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #249fd8), color-stop(1, #0a4484)); /* Saf4+, Chrome */filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#249fd8', endColorstr='#0a4484', GradientType='0'); /* IE*/}

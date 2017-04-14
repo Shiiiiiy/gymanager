@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.SysUser" table="SYS_USER">
+        <id name="id" type="long">
+            <column name="ID" length="20" />
+            <generator class="identity" />
+        </id>
+ 
+ 
+ 
+        <property name="user_no" type="java.lang.String" column="USER_NO"/>
+        <property name="pwd" type="java.lang.String" column="PWD"/>
+        <property name="pwd_id" type="java.lang.String" column="PWD_MD"/>
+        <property name="name" type="java.lang.String" column="NAME"/>
+        <property name="tel_no" type="java.lang.String" column="TEL_NO"/>
+        <property name="email" type="java.lang.String" column="EMAIL"/>
+        <property name="image_name" type="java.lang.String" column="IMAGE_NAME"/>
+        <property name="image_url" type="java.lang.String" column="IMAGE_URL"/>
+        <property name="status" type="long" column="STATUS"/>
+
+        <property name="recTime" type="timestamp" column="REC_TIME"/>
+        <property name="updateTime" type="timestamp" column="UPDATE_TIME"/>
+    </class>
+</hibernate-mapping>

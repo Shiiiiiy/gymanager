@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.NewsAll" table="NEWS_ALL">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="newsTitle" type="string" column="NEWS_TITLE"/>
+        <property name="newsContent" type="string" column="NEWS_CONTENT"/>
+        <property name="moduleCode" type="string" column="MODULE_CODE"/>
+        <property name="parentCode" type="string" column="PARENT_CODE"/>
+        <property name="newsSource" type="string" column="COMMENTS"/>
+        <property name="moduleType" type="string" column="MODULE_TYPE"/>
+        <property name="newsTime" type="timestamp" column="NEWS_TIME"/>
+        <property name="url" type="string" column="URL"/>
+        <property name="introduce" type="string" column="INTRODUCE"/>
+        <property name="status" type="int" column="STATUS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+    </class>
+</hibernate-mapping>

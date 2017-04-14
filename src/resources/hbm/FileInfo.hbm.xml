@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.FileInfo" table="FILE_INFO">
+        <id name="id" column="ID">
+	      <generator class="uuid.hex"/>
+	    </id>
+        <property name="fileName" type="string" column="FILE_NAME"/>
+        <property name="url" type="string" column="URL"/>
+        <property name="urlType" type="string" column="URL_TYPE"/>
+        <property name="fileTime" type="timestamp" column="FILE_TIME"/>
+        <property name="status" type="string" column="STATUS"/>
+        <property name="fileTitle" type="string" column="FILE_TITLE"/>
+        <property name="fileType" type="string" column="FILE_TYPE"/>
+        <property name="moduleCode" type="string" column="MODULE_CODE"/>
+        <property name="parentCode" type="string" column="PARENT_CODE"/>
+        
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+        <property name="sort" type="integer" column="SORT"/>
+    </class>
+</hibernate-mapping>

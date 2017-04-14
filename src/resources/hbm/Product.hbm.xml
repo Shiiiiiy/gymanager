@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.uws.model.Product" table="PRODUCT_INFO">
+		 <id name="id" type="java.lang.String">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="product_comp" type="java.lang.String" column="PRODUCT_COMP"/>
+        <property name="product_name" type="java.lang.String" column="PRODUCT_NAME"/>
+        <property name="product_num" type="java.lang.String" column="PRODUCT_NUM"/>
+        <property name="product_time" type="timestamp" column="PRODUCT_TIME"/>
+        <property name="statusstr" type="java.lang.String" column="STATUS"/>
+        <property name="comments" type="java.lang.String" column="COMMENTS"/>
+        <property name="create_time" type="timestamp" column="CREATE_TIME"/>
+        <property name="product_capacity" type="java.lang.String" column="PRODUCT_CAPACITY"/>
+        <property name="product_type" type="java.lang.String" column="PRODUCT_TYPE"/>
+        <property name="product_typeName" type="java.lang.String" column="PRODUCT_TYPE_NAME"/>
+	</class>
+</hibernate-mapping>

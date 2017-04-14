@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.uws.model.GardenProject" table="GARDEN_PROJECT">
+        <id name="id" type="string">
+            <column name="ID" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="ofGarden" type="string" column="OF_GARDEN"/>
+        <property name="projectName" type="string" column="PRO_NAME"/>
+        <property name="projectType" type="string" column="STATUS"/>
+        <property name="projectStatus" type="string" column="PRO_STATUS"/>
+        <property name="comments" type="string" column="COMMENTS"/>
+        <property name="projectContent" type="string" column="PRO_CONTENT"/>
+        <property name="projectInvest" type="string" column="PRO_INVEST"/>
+        
+        
+        <property name="projectTime" type="timestamp" column="PRO_TIME"/>
+        <property name="projectOvertime" type="timestamp" column="PRO_OVERTIME"/>
+        <property name="createTime" type="timestamp" column="CREATE_TIME"/>
+  
+    </class>
+</hibernate-mapping>
